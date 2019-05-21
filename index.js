@@ -6,7 +6,8 @@ var keys = require('./keys');
 var T = new Twit(keys);
 
 
-setInterval(tweet(), 1000*60*60*24);
+setInterval (tweet(), 1000*30);
+//setInterval(tweet(), 1000*60*60*24);
 // 1000*60*60*24 = 1 day
 
 function tweet() {
@@ -22,8 +23,10 @@ function tweet() {
     const diffTime = Math.abs(finalDate.getTime() - todayDate.getTime());
     const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
     
+    var rand = Math.floor(Math.random()*100);
     var tweetText = {
-        status: "Faltam " + diffDays + " para o Nathan sair do emprego"
+        //status: "Faltam " + diffDays + " para o Nathan sair do emprego"
+        status: "Teste " + rand
     }
 
     function tweeted(err, data, response) {
