@@ -1,0 +1,20 @@
+{
+  "name": "twitter",
+  "version": "1.0.0",
+  "description": "my twitter bot npm",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "twitter",
+    "bot",
+    "nathan"
+  ],
+  "author": "Eduardo Letsch",
+  "license": "ISC",
+  "dependencies": {
+    "twit": "^2.2.11"
+  }
+}
